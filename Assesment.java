@@ -3,6 +3,15 @@
 interface Gradable {
     String getGrade();
 }
+
+abstract class Assessment {
+    protected String title;
+    protected int maxScore;
+    protected int score;
+    
+    public Assessment(String title, int maxScore, int score) {
+        this.title = title;
+        this.maxScore = maxScore;
         this.score = score;
     }
     
